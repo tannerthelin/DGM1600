@@ -1,0 +1,9 @@
+If statements took me a while to completely grasp, but I think I’ve got a good handle on them now. Essentially, the statement is written as follows:
+
+if (arguments go in here) {
+	(function goes in here)
+}
+
+In the space for arguments, that’s where you’d write the condition. For example, that’s where you’d put the condition of a counter being more than 5, if you wanted something to happen after the counter got to 5. Inside the curly brackets is where you’d write what you want to happen once that counter reaches 5. 
+
+Overall, this last class has helped me understand If Statements a lot better, and I’m excited to see how they can be used in more complex scenarios.
