@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Guessing : MonoBehaviour {
+
+	public Text textBox;
+
 	int max = 100;
 	int min = 1;
 	int guess;
@@ -13,6 +17,18 @@ public class Guessing : MonoBehaviour {
 	void Start () 
 	{
 		guess = Random.Range(min, max);
+
+
+
+		textBox.text = "Welcome to Number Guesser"
+						+ "\nPick a number in your head."
+						+ "\n\nThe highest number you can pick is " + max
+						+ "\nThe lowest number you can pick is " + min
+						+ "\n\nIs the number higher or lower than " + guess + "?"
+						+"\nUp arrow for higher, Down for lower, Enter for equal.";
+
+
+
 		print ("Welcome to Number Guesser");
 		print ("Pick a number in your head.");
 
@@ -30,7 +46,7 @@ public class Guessing : MonoBehaviour {
 		if (counter == -1) {
 			if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
 				//counter--;
-				print("You win, I lose.");
+				textBox.text = "You win, I lose.";
 		}
 		
 		else if (Input.GetKeyDown(KeyCode.UpArrow)) 
@@ -38,7 +54,7 @@ public class Guessing : MonoBehaviour {
 			min = guess;
 			guess = (max + min) / 2;
 			counter--;
-			print ("Is the number higher or lower than " + guess);
+			textBox.text = "Is the number higher or lower than "+ guess + "?";
 		}
 
 		else if (Input.GetKeyDown(KeyCode.DownArrow)) 
@@ -46,12 +62,12 @@ public class Guessing : MonoBehaviour {
 			max = guess;
 			guess = (max + min) / 2;
 			counter--;
-			print ("Is the number higher or lower than " + guess);
+			textBox.text = "Is the number higher or lower than "+ guess + "?";
 		}
 
-		else if (Input.GetKeyDown(KeyCode.Return)) 
+		if (Input.GetKeyDown(KeyCode.Return)) 
 		{
-			print ("Yay, I guessed your number.");
+			textBox.text = "I guessed your number, I win!";
 		}
 			
 		if (counter == 0) {
