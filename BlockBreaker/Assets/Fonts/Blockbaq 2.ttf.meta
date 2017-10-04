@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7b5d21e9f9be74a07a1400d1f52ce0d5
+timeCreated: 1507047660
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blockbaq
+  fontNames:
+  - Blockbaq
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

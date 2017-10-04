@@ -1,0 +1,15 @@
+Variables are super cool, and the building blocks of a working program. Essentially, a variable is a little container that holds information. This information can be a number, a string of characters, or a function. Those are the only ones I know about now, at least. 
+
+An example of a string variable would be:
+
+string firstName = "John";
+
+
+
+An example of a number variable would be:
+
+int number1 = 10;
+
+In C#, you write the type of variable first. So "string", "int", etc. Then, you write the name you want to give to that variable. Then you put an equals sign (only one equals sign -- two would test to see if they had the same value). Then, you write the value you want to store in that variable. If it's a string, make sure to put quotes around it. Don't forget the semicolon at the end!
+
+It's also worth noting that you don't have to assign a variable a value right away. You can just create it, and then use it later on. 

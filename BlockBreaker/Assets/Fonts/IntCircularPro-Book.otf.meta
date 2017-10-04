@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d6c9b1bfb502b4ed5b456e92966f76e8
+timeCreated: 1507048844
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Int Circular Pro
+  fontNames:
+  - Int Circular Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6e671415f3809477f842738c8aca8c04, type: 3}
+  - {fileID: 12800000, guid: 1da983bc9e1b54ac895c761e78bfe703, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
