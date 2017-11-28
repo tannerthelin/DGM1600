@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Health.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ProjectileScript.cs" Line="21" Column="21" />
+      <File FileName="Assets/Scripts/Health.cs" Line="17" Column="3" />
+      <File FileName="Assets/Scripts/PowerUp_Script.cs" Line="29" Column="2" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="68" Column="5" />
+      <File FileName="Assets/Scripts/Meteor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Follow.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
