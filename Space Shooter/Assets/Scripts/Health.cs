@@ -8,7 +8,7 @@ public class Health : MonoBehaviour {
 	public GameObject explosionEffect;
 
 
-	public void IncrementalHealth(int damage) {
+	public void IncrementHealth(int damage) {
 		health += damage;
 		if (health <= 0) {
 			Destroy (gameObject);

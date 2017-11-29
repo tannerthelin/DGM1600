@@ -20,8 +20,6 @@ public class Meteor : MonoBehaviour {
 
 	void OnCollisionEnter(Collision c)
 	{
-		Instantiate(smallMeteors[1], c.gameObject.transform.position, c.gameObject.transform.rotation);
-
 		//Destroy(gameObject);
 	}
 		

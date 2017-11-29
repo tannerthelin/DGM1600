@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileScript : MonoBehaviour {
 
 	public double lifetime;
+	public int damage;
 
 	// Update is called once per frame
 	void Update () {
@@ -14,6 +15,10 @@ public class ProjectileScript : MonoBehaviour {
 		if (lifetime <= 0){
 			Destroy (gameObject);
 		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		other.GetComponent <Health>().IncrementHealth (damage);
 	}
 
 	void OnCollisionEnter2D (){
