@@ -6,25 +6,31 @@ public class ProjectileScript : MonoBehaviour {
 
 	public double lifetime;
 	public int damage;
+	//public AudioSource audio;
 
 	// Update is called once per frame
 	void Update () {
-		//transform.Translate (Vector3.up * speed * Time.deltaTime);
-
 		lifetime -= Time.deltaTime;
 		if (lifetime <= 0){
 			Destroy (gameObject);
 		}
+
 	}
+
+	void Start()
+	{
+		//audio.pitch = Random.Range(1f, 1.5f);
+	}
+
 
 	void OnTriggerEnter2D(Collider2D other) {
 		other.GetComponent <Health>().IncrementHealth (damage);
-	}
-
-	void OnCollisionEnter2D (){
 		Destroy(gameObject);
 	}
 
+//	void OnCollisionEnter2D (){
+//		Destroy(gameObject);
+//	}
 
 
 

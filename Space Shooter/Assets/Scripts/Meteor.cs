@@ -13,14 +13,10 @@ public class Meteor : MonoBehaviour {
 		GetComponent<Rigidbody2D>().AddTorque(Random.Range(-startRotation, startRotation), ForceMode2D.Impulse);
 	}
 
-	//Update
-	void Update() {
 
-	}
-
-	void OnCollisionEnter(Collision c)
+	void OnCollisionEnter2D(Collision2D coll)
 	{
-		//Destroy(gameObject);
+		coll.gameObject.GetComponent<Health>().IncrementHealth(-1);
 	}
 		
 }
