@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 	public float speed = 1.0f;
 	public float rotSpeed = 1.0f;
 	private Rigidbody2D rigid;
+	private AudioSource audio;
 
 	// Laser Shots
 	public GameObject projectile;
@@ -17,17 +18,21 @@ public class PlayerController : MonoBehaviour
 	public float shotForce;
 	public ParticleSystem particles;
 
-	void Die()
-	{
-		Destroy(gameObject);
-	}
-
 
 	void Start()
 	{
 
 		rigid = this.GetComponent<Rigidbody2D>();
+		audio = GetComponent<AudioSource> ();
 
+		print(GetComponent<Health>().GetHealth());
+
+
+	}
+
+	void OnCollisionEnter2D(Collision2D coll) 
+	{
+		GetComponent<Health>().IncrementHealth(-1);
 	}
 
 	// Update is called once per frame

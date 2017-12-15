@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Follow : MonoBehaviour {
+public class Follow : MonoBehaviour
+{
 
 	public Transform objectToFollow;
 	public float zOffset;
@@ -15,10 +16,14 @@ public class Follow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Vector3 myPos = objectToFollow.position; // create myPos, follow object.position
+		if (objectToFollow != null)
+		{
 
-		myPos.z = zOffset; // change z to zOffset
+			Vector3 myPos = objectToFollow.position; // create myPos, follow object.position
 
-		gameObject.transform.position = myPos;
+			myPos.z = zOffset; // change z to zOffset
+
+			gameObject.transform.position = myPos;
+		}
 	}
 }

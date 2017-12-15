@@ -53,14 +53,17 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AutoDestroy.cs" />
      <Compile Include="Assets\Scripts\Background_Script.cs" />
+     <Compile Include="Assets\Scripts\BorderScript.cs" />
      <Compile Include="Assets\Scripts\Follow.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Meteor.cs" />
+     <Compile Include="Assets\Scripts\MeteorSpawn.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PowerUp_Script.cs" />
      <Compile Include="Assets\Scripts\ProjectileScript.cs" />
+     <Compile Include="Assets\Scripts\ScoreboardScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

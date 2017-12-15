@@ -23,10 +23,15 @@ public class ProjectileScript : MonoBehaviour {
 	}
 
 
-	void OnTriggerEnter2D(Collider2D other) {
-		other.GetComponent <Health>().IncrementHealth (damage);
-		Destroy(gameObject);
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.GetComponent<Meteor>())
+		{
+			other.GetComponent<Meteor>().meteorHealth--;
+			Destroy(gameObject);
+		}
 	}
+
 
 //	void OnCollisionEnter2D (){
 //		Destroy(gameObject);

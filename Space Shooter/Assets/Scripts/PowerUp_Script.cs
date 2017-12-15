@@ -26,6 +26,16 @@ public class PowerUp_Script : MonoBehaviour {
 			break;
 		}
 	}
+
+	bool AmPlayer()
+	{
+		if (GetComponent<PlayerController>())
+		{
+			return true;
+		}
+		else { return false;}
+	}
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,22 +44,29 @@ public class PowerUp_Script : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 
-		switch (powerupType) {
+		if (other.GetComponent<PlayerController>())
+		{
 
-		case Type.speedBoosterGoWayFast:
-			other.GetComponent<PlayerController> ().speed *= 2;
-			break;
+			switch (powerupType)
+			{
 
-		case Type.fancyLaser:
-			//Stuff Goes Here
-			break;
+				case Type.speedBoosterGoWayFast:
+					other.GetComponent<PlayerController>().speed *= 2;
+					break;
 
-		case Type.overSheild:
-			//Stuff Goes Here
-			break;
+				case Type.fancyLaser:
+					//Stuff Goes Here
+					break;
+
+				case Type.overSheild:
+					other.GetComponent<Health>().health += 1;
+					other.GetComponent<Health>().ShowHearts();
+					break;
+			}
+
+
+			Destroy(this.gameObject);
 		}
-
-		Destroy(this.gameObject);
 	}
 
 
